@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="Initialized Ventas Project with default intelliJ">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/hello-view.fxml" afterDir="false" />
+    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productCreateView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productUpdateView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,14 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -38,7 +42,9 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2lyQXYjvdXrG3aBpse7DJ22szUw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,6 +63,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Guillermo\IdeaProjects\Ventas\src\main\resources\test\demo\ventas\controllers\product" />
+      <recent name="C:\Users\Guillermo\IdeaProjects\Ventas\src\main\resources\test\demo\ventas" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,8 +77,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726149930742</updated>
-      <workItem from="1726149930742" duration="395000" />
+      <workItem from="1726149930742" duration="5607000" />
     </task>
+    <task id="LOCAL-00001" summary="Initialized Ventas Project with default intelliJ Project">
+      <option name="closed" value="true" />
+      <created>1726150407657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150407657</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initialized Ventas Project with default intelliJ Project">
+      <option name="closed" value="true" />
+      <created>1726150681170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150681170</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main Menu Interface Update">
+      <option name="closed" value="true" />
+      <created>1726152010600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726152010600</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialized Ventas Project with default intelliJ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialized Ventas Project with default intelliJ" />
+    <MESSAGE value="Initialized Ventas Project with default intelliJ Project" />
+    <MESSAGE value="Main Menu Interface Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main Menu Interface Update" />
   </component>
 </project>
