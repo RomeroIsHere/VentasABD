@@ -6,9 +6,73 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="test.demo.ventas.controllers.product.ProductUpdateController"
             prefHeight="400.0" prefWidth="600.0">
+    <padding>
+        <Insets bottom="20" left="10" right="10" top="20" />
+    </padding>
+    <top>
+        <Label text="Añadir Producto" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <GridPane vgap="20.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <TextField fx:id="nombre" GridPane.columnIndex="1"/>
+            <TextField fx:id="desc" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Spinner fx:id="precio" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="true" amountToStepBy="0.01">
+                <valueFactory>
+                    <SpinnerValueFactory.DoubleSpinnerValueFactory min="0" max="50000"/>
+                </valueFactory>
+            </Spinner>
+            <Label text="Nombre"/>
+            <Label text="Descripción" GridPane.rowIndex="1"/>
+            <Label text="Precio" GridPane.rowIndex="2"/>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="20">
+            <Button text="Cancelar" styleClass="btn,btn-sm,btn-danger" onAction="#onCancelButton">
+                <graphic>
+                    <FontIcon iconLiteral="fas-times-circle" iconColor="white"/>
+                </graphic>
+            </Button>
+            <Button text="Aceptar" styleClass="btn,btn-sm,btn-success" onAction="#onAcceptButton">
+                <graphic>
+                    <FontIcon iconLiteral="fas-check-circle" iconColor="white"/>
+                </graphic>
+            </Button>
+        </HBox>
+    </bottom>
 
-</AnchorPane>
+</BorderPane>

@@ -46,6 +46,7 @@ public class ProductViewController {
             throw new RuntimeException(e);
         }
         ((ProductUpdateController)(fxmlLoader.getController())).setProduct(item);
+        ((ProductUpdateController)(fxmlLoader.getController())).setBackwardsReference(this);
 
         stage.setScene(scene);
         stage.show();

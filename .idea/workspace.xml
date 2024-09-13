@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/productos.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductCreationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productCreateView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productCreateView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productUpdateView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productUpdateView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726201937792</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finished Table Controls">
+      <option name="closed" value="true" />
+      <created>1726205806980</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726205806980</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +162,7 @@
     <MESSAGE value="Generated Main Table Controls and ProductView Public Interface with Table" />
     <MESSAGE value="Created Class Structure for Data Access Objects via a" />
     <MESSAGE value="Created Class Structure for Data Access Objects via a Mysql abstract class and DAO interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Class Structure for Data Access Objects via a Mysql abstract class and DAO interface" />
+    <MESSAGE value="Finished Table Controls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Table Controls" />
   </component>
 </project>
