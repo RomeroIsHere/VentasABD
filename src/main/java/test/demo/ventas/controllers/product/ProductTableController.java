@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.kordamp.bootstrapfx.BootstrapFX;
 import test.demo.ventas.MainMenuController;
+import test.demo.ventas.database.dao.ProductDAO;
 import test.demo.ventas.model.Product;
 
 import java.io.IOException;
@@ -34,18 +35,17 @@ public class ProductTableController implements Initializable {
     }
 
     public void onReset() {
-        //get all Product From Database and Display them
+        tabla.setItems(FXCollections.observableList(new ProductDAO().findAll()));//Creates an list with all Products
         welcomeText.setText("Se ha actualizado la Tabla");
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        tabla.setItems(FXCollections.observableList(new ArrayList<>()));//Creates an Empty Observable list
         /*
          *
          * author for this snippet of code  is James_D on StackOverflow
          * llama a un objeto de la interface callback que llama a un event handler para el mouse, esto para confirmar el objeto que se dio doble click
-         * show car view genera un nuevo stage que permite mostrar toda la informacion de el auto seleccionado
+         * show product view genera un nuevo stage que permite mostrar toda la informacion de el producto seleccionado
          * */
         tabla.setRowFactory(modelTableView -> {
             TableRow<Product> serviceTableRow= new TableRow<>();
@@ -60,6 +60,7 @@ public class ProductTableController implements Initializable {
         fadeTransition.setFromValue(1.0);
         fadeTransition.setToValue(0.0);
         welcomeText.textProperty().addListener((observableValue, s, t1) -> fadeTransition.play());
+        onReset();
     }
 
     private void showProductView(Product item) {
@@ -81,6 +82,25 @@ public class ProductTableController implements Initializable {
 
 
         stage.setTitle(item.toString());
+        stage.setScene(scene);
+        stage.showAndWait();
+        onReset();
+    }
+
+    public void onAddButtonClick(ActionEvent actionEvent) {
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(ProductViewController.class.getResource("productCreateView.fxml"));
+        Scene scene=null;
+        /*
+         * author for this snippet is jewelsea on StackOverflow
+         * */
+        try {
+            scene = new Scene(fxmlLoader.load());
+            scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
+        }catch (IOException Io){
+            Io.printStackTrace();
+        }
+        stage.setTitle("Nuevo Producto!");
         stage.setScene(scene);
         stage.showAndWait();
         onReset();

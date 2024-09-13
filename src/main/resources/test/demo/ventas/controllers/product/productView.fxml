@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="test.demo.ventas.controllers.product.ProductViewController"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.demo.ventas.controllers.product.ProductViewController">
+    <top>
+        <HBox spacing="20" BorderPane.alignment="CENTER_LEFT">
 
-</AnchorPane>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <Button minWidth="15" onAction="#onReset" styleClass="btn,btn-sm,btn-danger" text="Reset!">
+                <graphic>
+                    <FontIcon iconColor="white" iconLiteral="fas-redo" />
+                </graphic>
+            </Button>
+            <Label fx:id="welcomeText" alignment="CENTER" textAlignment="CENTER" />
+
+        </HBox>
+    </top>
+
+    <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <bottom>
+      <HBox spacing="20" BorderPane.alignment="CENTER">
+          <Button minWidth="15" onAction="#onUpdateButton" styleClass="btn,btn-sm,btn-info" text="Modify">
+              <graphic>
+                  <FontIcon iconColor="white" iconLiteral="fas-feather-alt" />
+              </graphic>
+          </Button>
+          <Button minWidth="15" onAction="#onDeleteButton" styleClass="btn,btn-sm,btn-danger" text="Delete">
+              <graphic>
+                  <FontIcon iconColor="white" iconLiteral="fas-backspace" />
+              </graphic>
+          </Button>
+      </HBox>
+    </bottom>
+    <center>
+      <VBox spacing="10" BorderPane.alignment="CENTER">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+          <Label fx:id="name" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+              <font>
+                  <Font size="36.0" />
+              </font>
+          </Label>
+          <Label fx:id="productID" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+              <font>
+                  <Font size="36.0" />
+              </font>
+          </Label>
+          <Label fx:id="desc" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+          </Label>
+          <Label fx:id="price" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+              <font>
+                  <Font size="36.0" />
+              </font>
+          </Label>
+      </VBox>
+    </center>
+    </BorderPane>

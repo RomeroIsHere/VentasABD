@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/productos.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductUpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Interface" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +54,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "database-connection",
+    "git-widget-placeholder": "Interface",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,8 +66,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Guillermo\IdeaProjects\Ventas\src\main\resources\test\demo\ventas\controllers\product" />
       <recent name="C:\Users\Guillermo\IdeaProjects\Ventas\src\main\resources\test\demo\ventas" />
+      <recent name="C:\Users\Guillermo\IdeaProjects\Ventas\src\main\resources\test\demo\ventas\controllers\product" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
