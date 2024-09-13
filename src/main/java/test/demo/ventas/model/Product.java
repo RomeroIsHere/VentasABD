@@ -40,7 +40,7 @@ public class Product {
         return precio.floatValue();
     }
     public String getPriceString(){
-        return "$"+NumberFormat.getCurrencyInstance().format(precio.floatValue());
+        return NumberFormat.getCurrencyInstance().format(precio.floatValue());
     }
     public void setPrecio(BigDecimal precio) {
         this.precio = precio;

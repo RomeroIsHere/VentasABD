@@ -49,6 +49,7 @@ public class ProductViewController {
         ((ProductUpdateController)(fxmlLoader.getController())).setBackwardsReference(this);
 
         stage.setScene(scene);
+        stage.setTitle(item.toString());
         stage.show();
     }
 
@@ -66,6 +67,7 @@ public class ProductViewController {
                 info.setHeaderText(null);
                 info.setContentText(String.format("El modelo %s ha sido borrado",item.getNombre()));
                 info.showAndWait();
+                System.out.println("Close window");
                 Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
                 stage.close();
             }

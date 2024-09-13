@@ -24,7 +24,6 @@ public abstract class ProductEditor {
 
     public void onCancelButton(ActionEvent actionEvent) {
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-        item=null;
         stage.close();
     }
 }

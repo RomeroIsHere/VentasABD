@@ -15,15 +15,9 @@ public class VentasApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(VentasApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
-        stage.setTitle("Hello!");
+        stage.setTitle("Tienda!");
         stage.setScene(scene);
-        stage.showAndWait();
-        try{
-        if (MySQLConnection.getConnection() !=null)
-            MySQLConnection.Disconnect();
-        }catch (Exception e){
-            System.err.println("Something Went Wrong when disconnecting");
-        }
+        stage.show();
     }
     public static void main(String[] args) {
         launch();

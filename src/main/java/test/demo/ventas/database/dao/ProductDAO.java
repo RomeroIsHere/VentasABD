@@ -13,6 +13,9 @@ import java.util.Optional;
 
 public class ProductDAO extends MySQLConnection implements DAO<Product> {
     Connection conn= getConnection();
+    public ProductDAO(){
+        conn=getConnection();
+    }
     @Override
     public Optional<Product> findById(int id) {
         Optional<Product> optionalBrand = Optional.empty();
@@ -54,15 +57,15 @@ public class ProductDAO extends MySQLConnection implements DAO<Product> {
 
     @Override
     public boolean save(Product record) {
-        String query = "insert into productos (idproducto, nombre,descripcion,precio)" +
-                " values (?, ?,?,?)";
+        String query = "insert into productos (nombre,descripcion,precio)" +
+                " values (?,?,?)";
         try {
             PreparedStatement ps = conn.prepareStatement(query);
-            ps.setInt(1, record.getIdProducto());
-            ps.setString(2, record.getNombre());
-            ps.setString(3,record.getDescripcion());
-            ps.setBigDecimal(4,record.getPrecio());
-            return ps.execute();
+            ps.setString(1, record.getNombre());
+            ps.setString(2,record.getDescripcion());
+            ps.setBigDecimal(3,record.getPrecio());
+            ps.execute();
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -71,14 +74,15 @@ public class ProductDAO extends MySQLConnection implements DAO<Product> {
 
     @Override
     public boolean update(Product record) {
-        String query = "update productos set nombre=?, descripcion=?, precio=? where brandID = ?";
+        String query = "update productos set nombre=?, descripcion=?, precio=? where idproducto = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setString(1, record.getNombre());
             ps.setString(2,record.getDescripcion());
             ps.setBigDecimal(3,record.getPrecio());
             ps.setInt(4, record.getIdProducto());
-            return ps.execute();
+            ps.execute();
+            return true;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -86,11 +90,12 @@ public class ProductDAO extends MySQLConnection implements DAO<Product> {
 
     @Override
     public boolean delete(int id) {
-        String query = "delete from productos where brandID = ?";
+        String query = "delete from productos where idproducto = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setInt(1, id);
-            return ps.execute();
+            ps.execute();
+            return true;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

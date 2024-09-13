@@ -4,6 +4,7 @@ module test.demo.ventas {
     requires org.kordamp.bootstrapfx.core;
     requires org.kordamp.ikonli.javafx;
     requires java.sql;
+    requires mysql.connector.j;
 
 
     opens test.demo.ventas to javafx.fxml;

@@ -9,6 +9,13 @@ public class ProductUpdateController extends ProductEditor{
     ProductViewController pvc;
     public void setProduct(Product item) {
         this.item=item;
+        fillData();
+    }
+
+    private void fillData() {
+        nombre.setText(item.getNombre());
+        desc.setText(item.getDescripcion());
+        precio.getValueFactory().setValue((double) item.getFloatPrice());
     }
 
     public void onAcceptButton(ActionEvent actionEvent) {

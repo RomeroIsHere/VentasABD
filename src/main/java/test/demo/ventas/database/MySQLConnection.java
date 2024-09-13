@@ -26,8 +26,10 @@ public class MySQLConnection {
             System.out.println("Successful database connection.");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(MySQLConnection.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Class not Found");
         } catch (SQLException ex) {
             Logger.getLogger(MySQLConnection.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Connection failed");
         }
     }
 
