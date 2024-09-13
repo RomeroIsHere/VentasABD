@@ -3,6 +3,7 @@ module test.demo.ventas {
     requires javafx.fxml;
     requires org.kordamp.bootstrapfx.core;
     requires org.kordamp.ikonli.javafx;
+    requires java.sql;
 
 
     opens test.demo.ventas to javafx.fxml;

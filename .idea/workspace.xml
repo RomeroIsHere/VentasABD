@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="Generated Main Table Controls and ProductView Public Interface with Table">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="Created Class Structure for Data Access Objects via a">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/MySQLConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/VentasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/VentasApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/controllers/product/ProductViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/demo/ventas/controllers/product/productTableView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +25,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Interface" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +53,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Interface",
+    "git-widget-placeholder": "database-connection",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726149930742</updated>
       <workItem from="1726149930742" duration="8945000" />
-      <workItem from="1726186867816" duration="5558000" />
+      <workItem from="1726186867816" duration="6714000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Ventas Project with default intelliJ Project">
       <option name="closed" value="true" />
@@ -116,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726174184591</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Generated Main Table Controls and ProductView Public Interface with Table">
+      <option name="closed" value="true" />
+      <created>1726200446116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726200446116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

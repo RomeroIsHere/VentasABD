@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.kordamp.bootstrapfx.BootstrapFX;
+import test.demo.ventas.database.MySQLConnection;
+
 import java.io.IOException;
 
 public class VentasApplication extends Application {
@@ -15,7 +17,13 @@ public class VentasApplication extends Application {
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
         stage.setTitle("Hello!");
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
+        try{
+        if (MySQLConnection.getConnection() !=null)
+            MySQLConnection.Disconnect();
+        }catch (Exception e){
+            System.err.println("Something Went Wrong when disconnecting");
+        }
     }
     public static void main(String[] args) {
         launch();
