@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="Created Class Structure for Data Access Objects via a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/MySQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" afterDir="false" />
+    <list default="true" id="6d0a0e1e-7441-4928-ab33-43f1219d1c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/VentasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/VentasApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/ventas/database/dao/ProductDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726149930742</updated>
       <workItem from="1726149930742" duration="8945000" />
-      <workItem from="1726186867816" duration="6714000" />
+      <workItem from="1726186867816" duration="8215000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Ventas Project with default intelliJ Project">
       <option name="closed" value="true" />
@@ -120,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726200446116</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created Class Structure for Data Access Objects via a Mysql abstract class and DAO interface">
+      <option name="closed" value="true" />
+      <created>1726201937792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726201937792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +147,8 @@
     <MESSAGE value="Main Menu Interface Update" />
     <MESSAGE value="Created Class Structure for MVC Pattern" />
     <MESSAGE value="Generated Main Table Controls and ProductView Public Interface with Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generated Main Table Controls and ProductView Public Interface with Table" />
+    <MESSAGE value="Created Class Structure for Data Access Objects via a" />
+    <MESSAGE value="Created Class Structure for Data Access Objects via a Mysql abstract class and DAO interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Class Structure for Data Access Objects via a Mysql abstract class and DAO interface" />
   </component>
 </project>
