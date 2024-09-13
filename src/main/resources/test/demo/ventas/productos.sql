@@ -1,7 +1,8 @@
 create user 'productosadmim'@'localhost' identified by 'productosDefaultPassphrase';
-drop database productos;
-create database if not exist productos;
-use productos;
+drop database Tienda;
+create database if not exists Tienda;
+use Tienda;
+grant all privileges on Tienda.* to 'productosadmim'@'localhost';
 create table productos(
     idproducto int primary key,
     nombre varchar(50),

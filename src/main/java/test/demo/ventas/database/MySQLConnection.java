@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 public class MySQLConnection {
     private static Connection conn = null;
     private static String hostname   = "localhost";
-    private static String dbname = "productos";
+    private static String dbname = "Tienda";
     private static String dbport = "3306";
     private static String dbuser = "productosadmim";
     private static String dbpass = "productosDefaultPassphrase";
